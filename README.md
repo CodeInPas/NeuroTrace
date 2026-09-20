@@ -50,7 +50,7 @@ To build this project from source, ensure your development environment meets the
 3. **BASS Audio Library** (`bass.dll` for Windows, or `.so` for Linux). Place the library file in the same directory as the compiled executable.
 
 ---
-Download Binary => https://github.com/CodeInPas/LlamaControlCenter/releases/ 
+Download Binary [Release](https://github.com/CodeInPas/NeuroTrace/releases/tag/NeuroTracev01)
 
 ## ☕ Support the Project
 
