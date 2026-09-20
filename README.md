@@ -5,7 +5,8 @@ Step into the role of a digital neuro-surgeon in **NEURO-TRACE 2088**. This cybe
 
 Built entirely from scratch using native **Lazarus Free Pascal (FPC)**, the game ditches traditional point-and-click mechanics in favor of a tactical Command Line Interface (CLI) working in tandem with a custom-rendered holographic map.
 
-![Gameplay Screenshot](assets/gameplay_action.png) <!-- Ganti dengan path screenshot Anda -->
+<img width="1353" height="692" alt="NEUROTRACE" src="https://github.com/user-attachments/assets/f35bcdf8-1225-4e10-ac81-997a6251c71a" />
+
 
 ## ✨ Technical Features
 This project serves as a showcase of what native FPC desktop applications can achieve without relying on heavy game engines:
