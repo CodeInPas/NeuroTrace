@@ -1,0 +1,10 @@
+{
+  "ScreenWidth" : 1920,
+  "ScreenHeight" : 1080,
+  "Fullscreen" : true,
+  "TargetFPS" : 60,
+  "MasterVolume" : 80,
+  "BufferBASS" : 1024,
+  "UIGlassOpacity" : 6.4999997615814209E-001,
+  "UIThemeColor" : "#00FF00"
+}
