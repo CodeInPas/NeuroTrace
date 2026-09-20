@@ -49,6 +49,19 @@ To build this project from source, ensure your development environment meets the
 2. **BGRABitmap** package (Installable via the Lazarus Online Package Manager).
 3. **BASS Audio Library** (`bass.dll` for Windows, or `.so` for Linux). Place the library file in the same directory as the compiled executable.
 
+---
+Download Binary => https://github.com/CodeInPas/LlamaControlCenter/releases/ 
+
+## ☕ Support the Project
+
+If you find **NeuroTrace** helpful and want to support its ongoing development, consider buying me a coffee or sending a tip. Any support is deeply appreciated!
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Buy%20Me%20a%20Coffee-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://Ko-fi.com/ainovasinusantara)
+[![PayPal](https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/KangOz)
+
+> **💡 Your support keeps the momentum going!**  
+> Every contribution directly fuels my passion, energy, and motivation to continuously build, maintain, and release even more useful open-source desktop applications for the developer community.
+
 Open the `.lpi` project file and press `F9` to build. The SQLite database (`neurotrace.db`) will be automatically generated upon the first launch.
 
 ---
