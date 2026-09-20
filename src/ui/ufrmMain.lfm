@@ -1,0 +1,46 @@
+object frmMain: TfrmMain
+  Left = 350
+  Height = 666
+  Top = 150
+  Width = 920
+  Caption = 'NEURO-TRACE 2088 - HOLOGRAPHIC DIAGNOSTIC'
+  ClientHeight = 666
+  ClientWidth = 920
+  Color = clBlack
+  Position = poScreenCenter
+  LCLVersion = '4.8.0.0'
+  WindowState = wsMaximized
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object pnlControlBoardHost: TPanel
+    Left = 0
+    Height = 666
+    Top = 0
+    Width = 618
+    Align = alClient
+    Anchors = []
+    BevelOuter = bvNone
+    Color = 2236962
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+  end
+  object pnTerminal: TPanel
+    Left = 628
+    Height = 646
+    Top = 10
+    Width = 282
+    Align = alRight
+    BorderSpacing.Around = 10
+    BevelOuter = bvNone
+    Enabled = False
+    ParentBackground = False
+    TabOrder = 1
+  end
+  object GameTimer: TTimer
+    Interval = 16
+    OnTimer = GameTimerTimer
+    Left = 48
+    Top = 48
+  end
+end
