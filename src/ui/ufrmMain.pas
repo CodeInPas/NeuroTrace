@@ -5,9 +5,9 @@ unit ufrmMain;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  BGRABitmap, BGRABitmapTypes, // BARU: Pustaka untuk menggambar TCyberButton
-  uGameEngine, uTerminalPanel, uControlBoardPanel, uGameModels;
+  Classes, SysUtils, Forms, Controls,LCLIntf, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Menus, BGRABitmap, BGRABitmapTypes, // BARU: Pustaka untuk menggambar TCyberButton
+  uGameEngine, uTerminalPanel, uControlBoardPanel, uGameModels,UnitAbout ;
 
 type
   {=============================================================================
@@ -35,11 +35,23 @@ type
   { TfrmMain }
   TfrmMain = class(TForm)
     GameTimer: TTimer;
+    MainMenu1: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem2: TMenuItem;
+    mnCodeInpas: TMenuItem;
+    mnExit: TMenuItem;
+    mnTutorial: TMenuItem;
+    mnAbout: TMenuItem;
     pnTerminal: TPanel;
     pnlControlBoardHost: TPanel;
+    Separator1: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure GameTimerTimer(Sender: TObject);
+    procedure mnCodeInpasClick(Sender: TObject);
+    procedure mnExitClick(Sender: TObject);
+    procedure mnAboutClick(Sender: TObject);
+    procedure mnTutorialClick(Sender: TObject);
   private
     FEngine: TGameEngine;
     FTerminal: TTerminalPanel;
@@ -374,6 +386,33 @@ begin
 
   if Assigned(FControlBoard) then
     FControlBoard.RedrawFrame;
+end;
+
+procedure TfrmMain.mnCodeInpasClick(Sender: TObject);
+begin
+   OpenDocument('https://github.com/CodeInPas');
+end;
+
+procedure TfrmMain.mnExitClick(Sender: TObject);
+begin
+  Application.Terminate ;
+end;
+
+procedure TfrmMain.mnAboutClick(Sender: TObject);
+var
+  F : TFormAbout;
+begin
+  try
+    F := TFormAbout.Create(self);
+    F.ShowModal;
+  finally
+    F.Free;
+  end;
+end;
+
+procedure TfrmMain.mnTutorialClick(Sender: TObject);
+begin
+  OpenDocument(ExtractFilePath(Application.ExeName ) + 'tutorial_neurotrace.pdf');
 end;
 
 end.
